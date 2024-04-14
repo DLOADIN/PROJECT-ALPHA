@@ -1,0 +1,442 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  font-family: 'poppins',sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  width: 100%;
+  background-color: antiquewhite;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+h1,h2{
+  color: #fff;
+}
+ion-icon{
+  position:sticky;
+  right:8px;
+  color: white;
+  font-size: 3.2em;
+  top: 20px;
+}
+
+.side-menu{
+  position: fixed;
+  background: darkblue;
+  opacity: 100%;
+  width: 20vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.side-menu .brand-name{
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.side-menu li{
+  
+  padding: 20px 60px;
+  margin: 10px;
+  color:white;
+  display: flex;
+  align-items: center;
+}
+.side-menu li a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.side-menu li:hover,.side-menu li ion-icon:hover,
+.side-menu li a:hover{
+  color:black;
+  width: 100vh;
+  background-color:rgb(9, 63, 241);
+}
+.container{
+  right: 0;
+  position:absolute;
+  width:80vw;
+  height:100vh;
+  background: #f1f1f1;
+}
+
+.container .header{
+  position:fixed;
+  top:0;
+  right:0;
+  width: 80vw;
+  height: 10vh;
+  background: white;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgb(0,0,0,0.2);
+  z-index: 1;
+}
+
+.container .header .nav{
+  width:90%;
+  display: flex;
+  align-items: center;
+}
+
+.btn{
+  background: darkblue;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.btn:hover{
+  color:darkblue;
+  background: white;
+  padding: 3px 8px;
+  border: 2px solid darkblue;
+}
+
+.ion{
+  font-size: 2em;
+}
+
+.container .header .nav .search .form-search{
+  width: 70%;
+  height:2%;
+  box-shadow:1px solid blue;
+}
+.container .header .nav .search
+{
+  flex:3;
+  display: flex;
+  justify-content: center;
+}
+
+.container .header .nav .search input[type=text]{
+  border: none;
+  background: #f1f1f1;
+  padding: 10px;
+  width:50%;
+}
+
+.container .header .nav .search button{
+  width:40px;
+  height:30px;
+  border:none;
+}
+.container .header .nav .search button .ion{
+  width:30px;
+  height:30px;
+  border: none;
+  display: flex;
+}
+
+.container .header .nav .user img{
+  width: 40px;
+  height: 40px;
+}
+.container .header .nav .user a{
+  color: white;
+  background-color: darkblue;
+  opacity: 100%;
+}
+.container .header .nav .user{
+  flex:1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.container .header .nav .user  a{
+  border:none;
+  border-radius: 10px;
+  height: 45px;
+  padding-top:13px ;
+}
+
+.font-text{
+  color: black;
+}
+
+.container .header .nav .user .img-case{
+  position: relative;
+  width:50px;
+  height: 50px;
+}
+
+.container .content{
+  position: relative;
+  margin-top: 10vh;background: url("../images/c29a59d6582d4029a2103e3baae706-l-x-factory-barber-studio-biz-photo-27ec274054e148d9b19070eebacb4f-booksy.jpeg")no-repeat;
+  
+  backdrop-filter: blur(15px) brightness(70%);
+  background-position: center;
+  background-size: cover;
+  min-height: 90vh;
+}
+.content ion-icon{
+  color:rgb(2, 197, 246);
+}
+
+.container .content .cards{
+  padding: 20px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.container .content .cards .card{
+  border-radius: 20px;
+  width: 250px;
+  height: 150px;
+  background: white;
+  margin: 20px 10px ;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  box-shadow: 0 14px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,blue,alpha);
+}
+h1{
+  padding-left: 20%;
+}
+
+.container .content .content-2{
+  min-height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.h2{
+  color: black;
+}
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px 10px;
+  border-bottom: 2px solid #999;
+  color: aqua;
+}
+.container .content .content-2 .recent-payments{
+  border-radius: 20px;
+  min-height: 50vh;
+  flex: 5px;
+  background: white;
+  margin:0px 25px 25px 25px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  display: flex;
+  flex-direction: column;
+}
+
+.container .content .content-2 .new-amounts{
+  border-radius: 20px;
+  flex: 5px;
+  background: white;
+  min-height: 50vh;
+  margin: 0px 25px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.container .content .content-3 .recent-debts{
+  border-radius: 20px;
+  flex: 15px;
+  background: white;
+  min-height: 50vh;
+  margin: 0px 25px;
+  display: flex;
+  flex-direction:column;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+table{
+  padding: 10px;
+
+}
+.lebutton a{
+  text-decoration: none;
+  color:darkblue; ;
+
+}
+.lebutton {
+    border-radius: 40px;
+    width:100%;
+    height: 38px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 800;
+  }
+
+th,td{
+  text-align: left;
+  padding:18px;
+}
+
+@media screen and (max-width:1050px){
+  .side-menu li{
+    font-size: 18px;
+  }
+}
+@media screen and (max-width:940px){
+  .side-menu li span{
+    display: none;
+  }
+  .side-menu{
+    align-items: center;
+  }
+  .side-menu li ion-icon{
+    width: 40px;
+    height: 40px;
+  }
+  .side-menu li:hover{
+     padding: 8px 38px;
+     background: black;
+     border: 2px solid white;
+    
+  }
+}
+
+@media screen and (max-width:536px) {
+  .brand-name h1{
+    font-size: 16px;
+  }
+  .container .content .cards{
+    justify-content: center;
+  }
+  .side-menu li ion-icon{
+    width: 30px;
+    height: 30px;
+  }
+  .container .content .content-2 .recent-payments table th:nth-child(2),
+  .container .content .content-2 .recent-payments table td:nth-child(2){
+    display: none;
+    margin-left: 40%;
+  }
+  .container .content .content-2 .new-amounts table th:nth-child(2),
+  .container .content .content-2 .new-amounts table td:nth-child(2){
+    display: none;
+  }
+}
+
+.main-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px 100px;
+}
+
+.form-box{
+  font-size: 20px;
+}
+.form-box{
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: repeat(1,1);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: black;
+  background: none;
+  border-radius: 20px;
+}
+form{
+  background: url("../images/Barbershopbristol.jpg")no-repeat;
+  background-position: center;
+  background: #f1f1f1;
+  background-size: cover;
+  border-radius: 20px;
+}
+.form-barber{
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: repeat(1,1);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: black;
+}
+.left{
+  height: 100%;
+  background:url("../images/barbershop.jpg")no-repeat center; 
+  background-size: cover;
+}
+.right{
+  padding: 50px 20px;
+}
+.form-barber{
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.field{
+  width: 100%;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border: 2px solid rgba(0,0,0,0);
+  background-color: rgba(230,230,230,0.6);
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: .3s;
+}
+.field:hover{
+  background-color: rgba(0,0,0,0.1);
+}
+.field:focus{
+  background-color: #fff;
+  border: 2px solid rgba(30, 85, 250,0.47);
+}
+form{
+  box-shadow: 6px 5px 6px 5px;
+  width: 100%;
+  height: 380px;
+}
+.btn2,.btn{
+  width:100%;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  background-color: rgba(2, 197, 246);
+  color: #fff;
+  border-radius: 20px;
+  opacity: 70%;
+  cursor: pointer;
+}
+.btn2{
+  width:50%;
+  height:50px;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  background-color: rgba(2, 197, 246);
+  opacity: 70%;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
